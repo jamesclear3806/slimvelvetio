@@ -1,4 +1,4 @@
-# pid-lock-c6a5c7
+# pid-lock-40f766
 
 A Rust pid-lock utility.
 
